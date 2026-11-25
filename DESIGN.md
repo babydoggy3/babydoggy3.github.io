@@ -188,7 +188,7 @@ A four-step night, two voices, and a mist for everything said quietly.
 
 One centred column, `--col` 46rem (736px), holding every spoken line; the header caps at 50rem so the avatar and the tabs share the thread's optical edge. Vertical rhythm comes from a single unit, `--turn` clamp(4.5rem, 11vw, 8rem), applied as the gap between exchanges; inside an exchange, bubbles stack at `--gap` clamp(0.5rem, 1.4vw, 0.75rem). Gutters are clamp(1rem, 4vw, 2rem). The one wide surface is the sample shelf, which opens the turn to 72rem so six posts sit three across, while its question and its closing note stay pinned to the 46rem column via asymmetric auto margins.
 
-Two breakpoints. At 52rem the shelf drops to two columns. At 30rem bubbles widen to 92% of the column, chips and send buttons stretch to fill their row, the phone icon leaves the header (the Viber icon stays), the about bubble stacks portrait over text, and the header status wraps to two lines instead of truncating. Every control keeps a ≥2.75rem hit area, and the composer input is 3.25rem.
+Two breakpoints. At 52rem the shelf drops to two columns. At 30rem bubbles widen to 92% of the column, chips and send buttons stretch to fill their row, the phone icon leaves the header (the WhatsApp icon stays), the about bubble stacks portrait over text, and the header status wraps to two lines instead of truncating. Every control keeps a ≥2.75rem hit area, and the composer input is 3.25rem.
 
 ### Named Rules
 **The Turn Rule.** Separation is a turn, never a section padding. Nothing gets a top border, a band, or a background change to mark a new section — only a gap.
@@ -220,7 +220,7 @@ The form language is the messaging bubble and nothing else. Bubbles are 1.4rem w
 ## Components
 
 ### Chat Header (signature)
-A sticky night bar, 50rem wide, holding the real headshot at 3rem with a 2px gold ring, the name in 1.125rem display, and a status line with a 0.5rem green dot: "Tagbilaran, Bohol · replies within a day". Three circular icon buttons (2.75rem) for Viber, phone, email sit right, gold on hover rail fill. Beneath it, a horizontally scrolling row of tab pills with a mask fade at 88%, the active tab gold with ink text, driven by an IntersectionObserver that sets `aria-current`.
+A sticky night bar, 50rem wide, holding the real headshot at 3rem with a 2px gold ring, the name in 1.125rem display, and a status line with a 0.5rem green dot: "Tagbilaran, Bohol · replies within a day". Three circular icon buttons (2.75rem) for WhatsApp, phone, email sit right, gold on hover rail fill. Beneath it, a horizontally scrolling row of tab pills with a mask fade at 88%, the active tab gold with ink text, driven by an IntersectionObserver that sets `aria-current`.
 
 ### Bubbles (signature)
 The page's only text container. The visitor's bubble is cream, left, ink text, tail bottom-left; Claude's is gold, right, tail bottom-right. Padding 0.8rem × 1.1rem, max-width min(85%, 34rem). Variants: **display** (the h1; padding grows to clamp(1.1rem, 3vw, 1.9rem) × clamp(1.2rem, 3.6vw, 2.3rem), `em` renders as an underline at 0.09em thick, offset 0.12em); **question** (a cream h2 at headline scale, 1rem × 1.3rem); **photo** (a gold shell, 0.35rem padding, two 4:5 images at 0.35rem gap with a 0.8125rem caption inside the gold); **about** (portrait + paragraph in a two-column grid); **small** (0.9375rem, for the concept-work disclaimer).
@@ -238,7 +238,7 @@ The page's one card: rail ground, 1px hairline, 1.5rem radius, clamp(1rem, 3vw, 
 Ordered list of gold bubbles, each led by a timestamp in 0.75rem/700 with 0.02em tracking at 72% ink. The turn closes with a "Seen" mark at 0.75rem mist beside a gold double-check glyph.
 
 ### Composer
-Night shell, 1.75rem radius, 1px hairline, 0.75rem padding, three stacked parts: a pill text field (rail ground, upper-rail border, gold border on focus, 0.9375rem placeholder, 3.25rem) with a hidden label; a fieldset of radio chips (outline pills, cream fill and ink text when checked, gold focus ring) for free check-up / free sample / a plan; and a send row where the primary "Send on Viber" is gold and flexes, with quieter "Text" and "Email" outlines. Invalid input swaps the border to a coral tone and reveals an inline alert; the direct phone/email line sits beneath in 0.9375rem mist, right-aligned.
+Night shell, 1.75rem radius, 1px hairline, 0.75rem padding, three stacked parts: a pill text field (rail ground, upper-rail border, gold border on focus, 0.9375rem placeholder, 3.25rem) with a hidden label; a fieldset of radio chips (outline pills, cream fill and ink text when checked, gold focus ring) for free check-up / free sample / a plan; and a send row where the primary "Send on WhatsApp" is gold and flexes, with quieter "Text" and "Email" outlines. Invalid input swaps the border to a coral tone and reveals an inline alert; the direct phone/email line sits beneath in 0.9375rem mist, right-aligned.
 
 ### Footer
 Night ground, hairline top, centred: the gold CD monogram at 4.5rem, the name line, and 0.8125rem fine print that names the concept work and holds the copyright; it carries no links and no second call to action.
@@ -249,7 +249,7 @@ Night ground, hairline top, centred: the gold CD monogram at 4.5rem, the name li
 - **Do** put every spoken line in a bubble with a speaker: cream left for the visitor, gold right for Claude, `ink` text on both.
 - **Do** keep the h1 inside the opening gold bubble and the free check-up line directly beneath it, before the chips.
 - **Do** keep every price inside the one pinned bill, `<details>` rows, Plan B open and tagged.
-- **Do** end the thread with the composer, whose submit opens Viber, SMS or email with a prefilled message; the `<footer>` below it is identity only.
+- **Do** end the thread with the composer, whose submit opens WhatsApp, SMS or email with a prefilled message; the `<footer>` below it is identity only.
 - **Do** label concept work in the thread itself, in the same voice, and keep the real headshot and CD monogram as the only identity marks.
 - **Do** hold spoken messages at 1.0625rem (17px) and every control at ≥2.75rem (44px).
 
