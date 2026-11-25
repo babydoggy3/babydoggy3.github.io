@@ -49,7 +49,7 @@ typography:
   label:
     fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
     fontSize: "0.8125rem"
-    fontWeight: 650
+    fontWeight: 600
     lineHeight: 1.4
   micro:
     fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
@@ -126,9 +126,7 @@ components:
 
 The page is a night-mode message thread, not a website that happens to mention chatting. A Bohol business owner's question sits in a cream bubble on the left; Claude's answer sits in a gold bubble on the right, set at headline size because in this world the answer *is* the headline. Prices are not a table but a pinned message. The testimonials section does not exist because testimonials do not exist; the closest thing is six labelled concept posts arriving as photos, the way an owner would actually receive them.
 
-Everything follows from that one premise. Rhythm is turn-taking, not sectioning: each exchange is separated by a large turn gap and nothing else. Type splits by who is talking — Bricolage Grotesque for every voiced statement (the answer, the questions, the plan names, the prices) and the phone's own system sans for the connective prose, which keeps the page feeling native and light on the mid-range Android that carries most of this traffic. Colour is grammar, not decoration: cream means the owner, gold means Claude, navy is the room.
-
-It is dense with small true details — timestamps, a "Seen" mark, a green dot, an "Add-ons" disclosure — and quiet everywhere else: no office photography, no icon triad, no gradient, no stock face. The one photograph of a person is the real one.
+Everything follows from that one premise. Rhythm is turn-taking, not sectioning: each exchange is separated by a large turn gap and nothing else. Type splits by who is talking — Bricolage Grotesque for every voiced statement (the answer, the questions, the plan names, the prices) and the phone's own system sans for the connective prose, which keeps the page feeling native and light on the mid-range Android that carries most of this traffic. Colour is grammar, not decoration: cream means the owner, gold means Claude, navy is the room. The world is dense with small true details — timestamps, a "Seen" mark, a green dot, an "Add-ons" disclosure — and quiet everywhere else: no office photography, no icon triad, no gradient, no stock face. The one photograph of a person is the real one.
 
 **Key Characteristics:**
 - Two-voice chat: cream bubbles left, gold bubbles right, navy ground.
@@ -176,7 +174,7 @@ A four-step night, two voices, and a mist for everything said quietly.
 - **Price** (700, clamp(1.15rem, 2.8vw, 1.5rem), 1, tabular numerals): right-aligned in every bill row; the unit ("a month", "one time") drops to 0.75rem body face beneath it.
 - **Body** (400, 1.0625rem, 1.55; 1.5 inside bubbles): every message. Long prose caps at 60–65ch.
 - **Small** (400, 0.9375rem): secondary messages, recipe meta, add-on lines, the direct-contact line.
-- **Label** (600–650, 0.8125rem–0.875rem): header status, tab pills, the "Pinned" label, terms.
+- **Label** (400–650, 0.8125rem–0.875rem): header status, tab pills, the "Pinned" label, terms.
 - **Micro** (700, 0.75rem, 0.02em): timestamps and "Seen" — the only stamps in the system.
 
 ### Named Rules
@@ -243,7 +241,7 @@ Ordered list of gold bubbles, each led by a timestamp in 0.75rem/700 with 0.02em
 Night shell, 1.75rem radius, 1px hairline, 0.75rem padding, three stacked parts: a pill text field (rail ground, upper-rail border, gold border on focus, 0.9375rem placeholder, 3.25rem) with a hidden label; a fieldset of radio chips (outline pills, cream fill and ink text when checked, gold focus ring) for free check-up / free sample / a plan; and a send row where the primary "Send on Viber" is gold and flexes, with quieter "Text" and "Email" outlines. Invalid input swaps the border to a coral tone and reveals an inline alert; the direct phone/email line sits beneath in 0.9375rem mist, right-aligned.
 
 ### Footer
-Night ground, hairline top, centred: the gold CD monogram at 4.5rem, the name line, and 0.8125rem fine print naming the concept work and the copyright.
+Night ground, hairline top, centred: the gold CD monogram at 4.5rem, the name line, and 0.8125rem fine print that names the concept work and holds the copyright; it carries no links and no second call to action.
 
 ## Do's and Don'ts
 

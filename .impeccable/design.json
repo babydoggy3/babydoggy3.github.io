@@ -261,7 +261,7 @@
     {
       "name": "Question heading bubble",
       "kind": "custom",
-      "refersTo": "bubble-question",
+      "refersTo": "bubble-them",
       "description": "Each section's question doubles as its heading — cream bubble in the display face at headline scale.",
       "html": "<h2 class=\"ds-q\">How much does it cost?</h2>",
       "css": ".ds-q { margin: 0; padding: 1rem 1.3rem; max-width: min(92%, 32rem); background: #faf6ee; color: #122438; border-radius: 1.4rem; border-bottom-left-radius: 0.4rem; align-self: flex-start; font: 700 clamp(1.5rem, 4.2vw, 2.25rem)/1.12 \"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.02em; text-wrap: balance; }"
@@ -309,7 +309,6 @@
     {
       "name": "Sample card",
       "kind": "card",
-      "refersTo": "sample-card",
       "description": "A 4:5 post with its recipe card underneath: fictional business in display, category and town in mist.",
       "html": "<figure class=\"ds-sample\"><div class=\"ds-sample__frame\" role=\"img\" aria-label=\"4:5 concept post\">4:5 post</div><figcaption class=\"ds-recipe\"><span class=\"ds-recipe__name\">Kape Loboc</span><span>Riverside cafe · Loboc</span><span class=\"ds-recipe__goal\">Launch a new drink</span></figcaption></figure>",
       "css": ".ds-sample { margin: 0; display: grid; gap: 0.7rem; width: 18rem; }\n.ds-sample__frame { display: grid; place-items: center; aspect-ratio: 4 / 5; border-radius: 1rem; background: linear-gradient(160deg, #24405e, #122438); color: #a9b8c9; box-shadow: 0 1.25rem 2.5rem -1.25rem rgba(0,0,0,0.6); overflow: hidden; font: 600 0.75rem/1 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; letter-spacing: 0.02em; transition: transform 0.6s cubic-bezier(0.16,1,0.3,1); }\n.ds-sample:hover .ds-sample__frame { transform: scale(1.03); }\n.ds-recipe { display: grid; gap: 0.1rem; padding: 0 0.25rem; font: 400 0.9375rem/1.45 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; color: #a9b8c9; }\n.ds-recipe__name { font: 700 1.125rem/1.25 \"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif; color: #faf6ee; letter-spacing: -0.01em; }\n.ds-recipe__goal { color: #faf6ee; }"
@@ -317,7 +316,7 @@
   ],
   "narrative": {
     "northStar": "The Pinned Conversation",
-    "overview": "The page is a night-mode message thread, not a website that happens to mention chatting. A Bohol business owner's question sits in a cream bubble on the left; Claude's answer sits in a gold bubble on the right, set at headline size because in this world the answer is the headline. Prices are not a table but a pinned message. The testimonials section does not exist because testimonials do not exist; the closest thing is six labelled concept posts arriving as photos, the way an owner would actually receive them.\n\nEverything follows from that one premise. Rhythm is turn-taking, not sectioning: each exchange is separated by a large turn gap and nothing else. Type splits by who is talking — Bricolage Grotesque for every voiced statement (the answer, the questions, the plan names, the prices) and the phone's own system sans for the connective prose, which keeps the page feeling native and light on the mid-range Android that carries most of this traffic. Colour is grammar, not decoration: cream means the owner, gold means Claude, navy is the room.\n\nThe world is dense with small true details — timestamps, a \"Seen\" mark, a green online dot, an \"Add-ons\" disclosure — and quiet everywhere else. There is no photography of offices, no icon triad, no gradient, no stock face. The one photograph of a person is the real one.",
+    "overview": "The page is a night-mode message thread, not a website that happens to mention chatting. A Bohol business owner's question sits in a cream bubble on the left; Claude's answer sits in a gold bubble on the right, set at headline size because in this world the answer *is* the headline. Prices are not a table but a pinned message. The testimonials section does not exist because testimonials do not exist; the closest thing is six labelled concept posts arriving as photos, the way an owner would actually receive them.\n\nEverything follows from that one premise. Rhythm is turn-taking, not sectioning: each exchange is separated by a large turn gap and nothing else. Type splits by who is talking — Bricolage Grotesque for every voiced statement (the answer, the questions, the plan names, the prices) and the phone's own system sans for the connective prose, which keeps the page feeling native and light on the mid-range Android that carries most of this traffic. Colour is grammar, not decoration: cream means the owner, gold means Claude, navy is the room. The world is dense with small true details — timestamps, a \"Seen\" mark, a green dot, an \"Add-ons\" disclosure — and quiet everywhere else: no office photography, no icon triad, no gradient, no stock face. The one photograph of a person is the real one.",
     "keyCharacteristics": [
       "Two-voice chat: cream bubbles left, gold bubbles right, navy ground.",
       "The h1 lives inside a gold bubble, not above the thread.",
@@ -328,71 +327,70 @@
     "rules": [
       {
         "name": "The Two Voices Rule",
-        "section": "colors",
+        "section": "Colors",
         "body": "Cream is what the visitor says, gold is what Claude says, navy is the room. A colour never decorates — it attributes. If a new element cannot be assigned to a speaker, it is chrome and belongs in night or rail."
       },
       {
         "name": "The Gold Is Spoken Rule",
-        "section": "colors",
+        "section": "Colors",
         "body": "Gold appears as a bubble, a chip, a price, a tag, or a ring. It never fills a band, a section background, or a gradient; there is no gold wash anywhere on the page."
       },
       {
         "name": "The Mist Is Meta Rule",
-        "section": "colors",
+        "section": "Colors",
         "body": "Mist never carries a message. It is legal to use it only for status, timestamps, units, terms and helper text at 0.75–0.9375rem."
       },
       {
         "name": "The Two Faces Rule",
-        "section": "typography",
+        "section": "Typography",
         "body": "Bricolage carries anything with a voice or a number; the system sans carries everything that explains it. Never set a paragraph in the display face, and never set a headline, plan name, or price in the system sans."
       },
       {
         "name": "The Tightening Rule",
-        "section": "typography",
+        "section": "Typography",
         "body": "Display tracking is negative and grows tighter as the type grows (−0.01em at title, −0.035em at display). Never letter-space display type; the only positive tracking in the system is 0.02em on micro stamps."
       },
       {
         "name": "The 17px Floor Rule",
-        "section": "typography",
+        "section": "Typography",
         "body": "Message text never goes below 1.0625rem (17px), and metadata never below 0.75rem (12px). The page is read between customers on a phone."
       },
       {
         "name": "The Turn Rule",
-        "section": "layout",
+        "section": "Layout",
         "body": "Separation is a turn, never a section padding. Nothing gets a top border, a band, or a background change to mark a new section — only a gap."
       },
       {
         "name": "The One Column Rule",
-        "section": "layout",
+        "section": "Layout",
         "body": "Speech lives in 46rem. The shelf is the single sanctioned exception; do not widen another block to full bleed."
       },
       {
         "name": "The Pick-Up Rule",
-        "section": "elevation",
+        "section": "Elevation & Depth",
         "body": "If it cannot be picked up — a section, a headline, a divider — it gets no shadow. Tonal steps carry depth everywhere else."
       },
       {
         "name": "The Tail Rule",
-        "section": "shapes",
+        "section": "Shapes",
         "body": "1.4rem corners, 0.4rem on the speaker's bottom corner. A bubble without a tail is not a speaker; a bubble with two tails is a shape error."
       },
       {
         "name": "The Pill Rule",
-        "section": "shapes",
+        "section": "Shapes",
         "body": "If it is pressed, it is a pill or a circle. Rectangles are content (rows, photos, cards), never controls."
       }
     ],
     "dos": [
-      "**Do** put every spoken line in a bubble with a speaker: cream left for the visitor, gold right for Claude, ink text on both.",
+      "**Do** put every spoken line in a bubble with a speaker: cream left for the visitor, gold right for Claude, `ink` text on both.",
       "**Do** keep the h1 inside the opening gold bubble and the free check-up line directly beneath it, before the chips.",
-      "**Do** keep every price inside the one pinned bill, details rows, Plan B open and tagged.",
+      "**Do** keep every price inside the one pinned bill, `<details>` rows, Plan B open and tagged.",
       "**Do** make the footer of the page a composer whose submit opens Viber, SMS or email with a prefilled message.",
       "**Do** label concept work in the thread itself, in the same voice, and keep the real headshot and CD monogram as the only identity marks.",
       "**Do** hold message text at ≥1.0625rem and controls at ≥2.75rem."
     ],
     "donts": [
-      "**Don't** add a hero headline block, eyebrow, or kicker above the thread; the first thing in the body is the visitor's question.",
-      "**Don't** introduce a light section, a gold band, or a gradient to break up the scroll — separation is a turn gap.",
+      "**Don't** add a hero headline block, eyebrow, or kicker above the thread, or a light section, gold band, or gradient to break up the scroll — the first thing in the body is the visitor's question, and separation is a turn gap.",
       "**Don't** rebuild the prices as a comparison table or three-column cards; the bill's rows are the pattern.",
       "**Don't** add testimonials, client logos, star ratings, or follower counts; none exist, and the page never fakes them.",
       "**Don't** set prose in Bricolage or a headline/price in the system sans.",
