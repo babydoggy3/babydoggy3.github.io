@@ -112,7 +112,7 @@ transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
 .turn { max-width: var(--col); margin: 0 auto var(--turn); display: flex; flex-direction: column; gap: var(--gap); }
 .turn--wide { max-width: 72rem; }
 .turn--wide > .msg { width: min(100%, var(--col)); }
-.turn--wide > .msg--them { margin-left: max(0px, calc((100% - var(--col)) / 2)); }
+.turn--wide > .msg--them { width: fit-content; margin-left: max(0px, calc((100% - var(--col)) / 2)); }
 .turn--wide > .msg--me { margin-left: auto; margin-right: max(0px, calc((100% - var(--col)) / 2)); width: auto; max-width: min(85%, 34rem); }
 .msg {
 margin: 0; padding: 0.8rem 1.1rem; max-width: min(85%, 34rem);
@@ -131,7 +131,7 @@ border-bottom-right-radius: var(--r-tail);
 .msg a { color: inherit; }
 .msg--q {
 font: 700 clamp(1.5rem, 4.2vw, 2.25rem)/1.12 var(--display);
-letter-spacing: -0.02em; padding: 1rem 1.3rem; max-width: min(92%, 32rem); text-wrap: balance;
+letter-spacing: -0.02em; padding: 1rem 1.3rem; max-width: min(92%, 36rem); text-wrap: balance;
 }
 .turn--hero { margin-bottom: calc(var(--turn) * 0.9); }
 .turn--hero .msg--them { font-size: 1.125rem; }
@@ -254,7 +254,8 @@ font: 650 1rem var(--body); cursor: pointer; transition: background-color 0.2s v
 .send__btn--primary:hover { background: #f6cf6f; }
 .composer__note { margin: 0; padding: 0 0.75rem; color: var(--cream); font-size: 0.9375rem; }
 .composer__error { margin: 0; padding: 0 0.75rem; color: #ffb4a6; font-size: 0.9375rem; }
-.direct { align-self: flex-end; text-align: right; max-width: 40rem; margin: 0.5rem 0 0; font-size: 0.9375rem; color: var(--mist); }
+.direct { align-self: flex-end; text-align: right; max-width: 40rem; margin: 0.5rem 0 0; font-size: 0.9375rem; color: var(--mist); text-wrap: balance; }
+.direct span { white-space: nowrap; }
 .foot { border-top: 1px solid var(--line); background: var(--night); padding: 2.5rem clamp(1rem, 4vw, 2rem) 3rem; text-align: center; color: var(--mist); font-size: 0.9375rem; }
 .foot img { width: 4.5rem; height: auto; margin: 0 auto 0.75rem; }
 .foot p { margin: 0.25rem auto; max-width: 60ch; }
@@ -262,6 +263,9 @@ font: 650 1rem var(--body); cursor: pointer; transition: background-color 0.2s v
 @media (max-width: 52rem) { .shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 30rem) {
 .msg { max-width: 92%; }
+.want { gap: 0.25rem; }
+.want span { padding: 0.5rem 0.6rem; font-size: 0.875rem; width: 100%; justify-content: center; }
+.want label { flex: 1 1 auto; }
 .msg--photos { width: 92%; }
 .who__status { font-size: 0.75rem; }
 .shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 0.75rem; }
@@ -485,14 +489,14 @@ font: 650 1rem var(--body); cursor: pointer; transition: background-color 0.2s v
       <p class="composer__note" id="composer-note" role="status" hidden>Your message is copied. Paste it into the Messenger chat that just opened.</p>
       <p class="composer__error" id="composer-error" role="alert" hidden>Type your business name first, so I know who's asking.</p>
     </form>
-    <p class="direct">Or reach me directly: <a href="https://www.facebook.com/profile.php?id=61597123493255">Facebook Page</a> · <a href="tel:+639176225100">0917&nbsp;622&nbsp;5100</a> (call, text or WhatsApp) · <a href="mailto:claude_daigan@protonmail.com">claude_daigan@protonmail.com</a></p>
+    <p class="direct">Or reach me directly: <span><a href="https://www.facebook.com/profile.php?id=61597123493255">Facebook Page</a> ·</span> <span><a href="tel:+639176225100">0917&nbsp;622&nbsp;5100</a> (call, text or WhatsApp) ·</span> <span><a href="mailto:claude_daigan@protonmail.com">claude_daigan@protonmail.com</a></span></p>
   </section>
 </main>
 
 <footer class="foot">
   <img src="assets/logo-gold.webp" width="64" height="56" alt="CD monogram">
   <p>Claude Daigan · Social media &amp; marketing · Tagbilaran City, Bohol</p>
-  <p><a href="https://www.facebook.com/profile.php?id=61597123493255">Claude Daigan – Social Media &amp; Marketing on Facebook</a></p>
+  <p><a href="https://www.facebook.com/profile.php?id=61597123493255">Facebook Page</a> · <a href="https://wa.me/639176225100">WhatsApp</a> · <a href="mailto:claude_daigan@protonmail.com">Email</a></p>
   <p class="foot__fine">Sample posts on this page are concepts for fictional businesses; their photos are AI-generated. © 2026 Claude Daigan.</p>
 </footer>
 
