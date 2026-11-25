@@ -182,7 +182,7 @@ A four-step night, two voices, and a mist for everything said quietly.
 
 **The Tightening Rule.** Display tracking is negative and grows tighter as the type grows (−0.01em at title, −0.035em at display). Never letter-space display type; the only positive tracking in the system is 0.02em on micro stamps.
 
-**The 17px Floor Rule.** Message text never goes below 1.0625rem (17px), and metadata never below 0.75rem (12px). The page is read between customers on a phone.
+**The 17px Floor Rule.** A spoken message is 1.0625rem (17px); the only smaller messages are the 0.9375rem secondary notes that qualify one. Metadata never goes below 0.75rem (12px). The page is read between customers on a phone.
 
 ## Layout
 
@@ -213,9 +213,9 @@ Depth is tonal, not cast. Four navy steps — night, navy, rail, upper rail — 
 The form language is the messaging bubble and nothing else. Bubbles are 1.4rem with the speaker's own bottom corner cut to 0.4rem; consecutive bubbles from the same speaker cut the tail too, so a run reads as one utterance. Everything pressable is a pill (999px): chips, tabs, the composer field, radio chips, send buttons, the recommendation tag. Cards round at 1.5rem (the pinned bill) and 1.75rem (the composer shell); images round at 1rem. Circles are reserved for faces and the header icon buttons. Strokes are hairlines — 1px at 14% cream for dividers, 1.5px gold on outlined chips and send buttons, 2px cream as the bill's ledger top rule.
 
 ### Named Rules
-**The Tail Rule.** 1.4rem corners, 0.4rem on the speaker's bottom corner. A bubble without a tail is not a speaker; a bubble with two tails is a shape error.
+**The Tail Rule.** 1.4rem corners with 0.4rem on the speaker's bottom corner, and a run of bubbles from one speaker keeps its tail only on the last. The photo bubble is the one object allowed a tail on both right corners: it is an album, not a line of speech.
 
-**The Pill Rule.** If it is pressed, it is a pill or a circle. Rectangles are content (rows, photos, cards), never controls.
+**The Pill Rule.** A button is a pill or a circle, never a rounded rectangle. Disclosures are the exception and open by chevron on a plain text row (the price rows, Add-ons), because they are part of the ledger, not actions.
 
 ## Components
 
@@ -223,16 +223,16 @@ The form language is the messaging bubble and nothing else. Bubbles are 1.4rem w
 A sticky night bar, 50rem wide, holding the real headshot at 3rem with a 2px gold ring, the name in 1.125rem display, and a status line with a 0.5rem green dot: "Tagbilaran, Bohol · replies within a day". Three circular icon buttons (2.75rem) for Viber, phone, email sit right, gold on hover rail fill. Beneath it, a horizontally scrolling row of tab pills with a mask fade at 88%, the active tab gold with ink text, driven by an IntersectionObserver that sets `aria-current`.
 
 ### Bubbles (signature)
-The page's only text container. `.msg--them` is cream, left, `ink` text, tail bottom-left; `.msg--me` is gold, right, tail bottom-right. Padding 0.8rem × 1.1rem, max-width min(85%, 34rem). Variants: **display** (the h1; padding grows to clamp(1.1rem, 3vw, 1.9rem) × clamp(1.2rem, 3.6vw, 2.3rem), `em` renders as an underline at 0.09em thick, offset 0.12em); **question** (a cream h2 at headline scale, 1rem × 1.3rem); **photo** (a gold shell, 0.35rem padding, two 4:5 images at 0.35rem gap with a 0.8125rem caption inside the gold); **about** (portrait + paragraph in a two-column grid); **small** (0.9375rem, for the concept-work disclaimer).
+The page's only text container. The visitor's bubble is cream, left, ink text, tail bottom-left; Claude's is gold, right, tail bottom-right. Padding 0.8rem × 1.1rem, max-width min(85%, 34rem). Variants: **display** (the h1; padding grows to clamp(1.1rem, 3vw, 1.9rem) × clamp(1.2rem, 3.6vw, 2.3rem), `em` renders as an underline at 0.09em thick, offset 0.12em); **question** (a cream h2 at headline scale, 1rem × 1.3rem); **photo** (a gold shell, 0.35rem padding, two 4:5 images at 0.35rem gap with a 0.8125rem caption inside the gold); **about** (portrait + paragraph in a two-column grid); **small** (0.9375rem, for the concept-work disclaimer).
 
 ### Quick-Reply Chips
-Outline pills, 1.5px gold border, gold label, 3rem tall, 1rem text at weight 650, icon at 1.25rem. Hover fills rail; active scales to 0.97. `chip--primary` inverts to gold fill with ink text, sits first in the row, and is the only chip with a shadow — it is the free check-up.
+Outline pills, 1.5px gold border, gold label, 3rem tall, 1rem text at weight 650, icon at 1.25rem. Hover fills rail; active scales to 0.97. The primary chip inverts to gold fill with ink text, sits first in the row, and is the only chip with a shadow — it is the free check-up.
 
 ### Sample Shelf
 A three-column grid (two at ≤52rem) of 4:5 photos at 1rem radius with a hover scale to 1.03 over 0.6s. Under each photo, a "recipe card" definition list: the fictional business in 1.125rem display cream, the category and town in 0.9375rem mist, the goal in cream. The shelf is the only wide element; it is closed by a small gold bubble stating that the businesses are made up and the photos are AI-generated.
 
 ### Pinned Price Bill
-The page's one card: rail ground, 1px hairline, 1.5rem radius, clamp(1rem, 3vw, 1.75rem) padding, capped by a "Pinned" label with a pin icon and a 2px cream ledger rule. Each plan is a `<details>` row: plan name in display at weight 650 with a 0.55rem chevron drawn from two borders (rotating −45° → 45° over 0.25s), price in tabular display gold at the right, 1px hairline between rows, ≥3rem summary height. Recommended is a gold `.tag` (0.75rem, 700, 999px) inside the plan name; that row's name turns gold and the row ships open. Add-ons are a single disclosure of dashed-hairline lines with right-aligned gold prices; terms close the card at 0.875rem mist, 65ch.
+The page's one card: rail ground, 1px hairline, 1.5rem radius, clamp(1rem, 3vw, 1.75rem) padding, capped by a "Pinned" label with a pin icon and a 2px cream ledger rule. Each plan is a `<details>` row: plan name in display at weight 650 with a 0.55rem chevron drawn from two borders (rotating −45° → 45° over 0.25s), price in tabular display gold at the right, 1px hairline between rows, ≥3rem summary height. Recommended is a gold tag (0.75rem, 700, 999px) inside the plan name; that row's name turns gold and the row ships open. Add-ons are a single disclosure of dashed-hairline lines with right-aligned gold prices; terms close the card at 0.875rem mist, 65ch.
 
 ### Steps
 Ordered list of gold bubbles, each led by a timestamp in 0.75rem/700 with 0.02em tracking at 72% ink. The turn closes with a "Seen" mark at 0.75rem mist beside a gold double-check glyph.
@@ -249,12 +249,12 @@ Night ground, hairline top, centred: the gold CD monogram at 4.5rem, the name li
 - **Do** put every spoken line in a bubble with a speaker: cream left for the visitor, gold right for Claude, `ink` text on both.
 - **Do** keep the h1 inside the opening gold bubble and the free check-up line directly beneath it, before the chips.
 - **Do** keep every price inside the one pinned bill, `<details>` rows, Plan B open and tagged.
-- **Do** make the footer of the page a composer whose submit opens Viber, SMS or email with a prefilled message.
+- **Do** end the thread with the composer, whose submit opens Viber, SMS or email with a prefilled message; the `<footer>` below it is identity only.
 - **Do** label concept work in the thread itself, in the same voice, and keep the real headshot and CD monogram as the only identity marks.
-- **Do** hold message text at ≥1.0625rem and controls at ≥2.75rem.
+- **Do** hold spoken messages at 1.0625rem (17px) and every control at ≥2.75rem (44px).
 
 ### Don't:
-- **Don't** add a hero headline block, eyebrow, or kicker above the thread, or a light section, gold band, or gradient to break up the scroll — the first thing in the body is the visitor's question, and separation is a turn gap.
+- **Don't** add a hero headline block, eyebrow, or kicker above the thread, or a light section, a gold band, or a gradient fill to break up the scroll — the first thing in the body is the visitor's question, and separation is a turn gap.
 - **Don't** rebuild the prices as a comparison table or three-column cards; the bill's rows are the pattern.
 - **Don't** add testimonials, client logos, star ratings, or follower counts; none exist, and the page never fakes them.
 - **Don't** set prose in Bricolage or a headline/price in the system sans.
