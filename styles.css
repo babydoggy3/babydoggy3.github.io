@@ -61,9 +61,7 @@ svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-
 /* ---------- chat header ---------- */
 .chat-head {
   position: sticky; top: 0; z-index: 10;
-  background: color-mix(in srgb, var(--night) 92%, transparent);
-  backdrop-filter: saturate(1.4) blur(14px);
-  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  background: var(--night);
   border-bottom: 1px solid var(--line);
 }
 .chat-head__inner {
@@ -265,7 +263,7 @@ svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-
 
 /* one authored moment: the opening exchange arrives like messages */
 .js .turn--hero [data-seq] { animation: arrive 0.55s var(--ease) both; animation-delay: calc(var(--i, 0) * 0.16s); }
-@keyframes arrive { from { opacity: 0; transform: translateY(0.9rem) scale(0.98); filter: blur(4px); } }
+@keyframes arrive { from { opacity: 0; transform: translateY(0.9rem) scale(0.98); } }
 @media (prefers-reduced-motion: reduce) { .js .turn--hero [data-seq] { animation: none; } }
 
 @media (max-width: 52rem) { .shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
