@@ -133,7 +133,7 @@ Everything follows from that one premise. Rhythm is turn-taking, not sectioning:
 - The h1 lives inside a gold bubble, not above the thread.
 - One pinned bill carries every price; rows open in place.
 - A composer at the foot, with radio chips and three send targets, is the only conversion surface.
-- One authored motion: the opening exchange arrives, then stops.
+- Motion is limited to state feedback: short colour and transform transitions on chips, tabs, price rows and sample hovers. The opening exchange renders instantly (a staggered arrival was removed: it cost ~200 ms of main-thread time on mid-range phones).
 
 ## Colors
 
@@ -258,5 +258,5 @@ Night ground, hairline top, centred: the gold CD monogram at 4.5rem, the name li
 - **Don't** rebuild the prices as a comparison table or three-column cards; the bill's rows are the pattern.
 - **Don't** add testimonials, client logos, star ratings, or follower counts; none exist, and the page never fakes them.
 - **Don't** set prose in Bricolage or a headline/price in the system sans.
-- **Don't** add a second animation or a scroll reveal; the opening exchange is the only authored motion, and it disappears under reduced-motion.
+- **Don't** add entrance animations or scroll reveals; on the audience's mid-range Android phones they cost more than they give. Keep motion to interaction feedback.
 - **Don't** use hard offset shadows, bevels, or inner glows; depth is the four navy steps plus a soft downward lift.

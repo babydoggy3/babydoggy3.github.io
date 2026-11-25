@@ -210,7 +210,7 @@
       {
         "name": "arrive",
         "value": "opacity 0.35 → 1, translateY 0.6rem → 0, 0.55s, 0.16s stagger",
-        "purpose": "The one authored moment: the opening exchange arrives like messages; disabled under prefers-reduced-motion."
+        "purpose": "Retired: the staggered opening arrival was removed for main-thread cost on mid-range phones; motion is interaction feedback only."
       },
       {
         "name": "press",
@@ -322,7 +322,7 @@
       "The h1 lives inside a gold bubble, not above the thread.",
       "One pinned bill carries every price; rows open in place.",
       "A composer at the foot, with radio chips and three send targets, is the only conversion surface.",
-      "One authored motion: the opening exchange arrives, then stops."
+      "Motion is interaction feedback only; the opening exchange renders instantly."
     ],
     "rules": [
       {

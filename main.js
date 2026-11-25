@@ -1,8 +1,6 @@
 (() => {
   document.documentElement.classList.add("js");
 
-  // Stagger the opening exchange (CSS reads --i; content stays visible without JS).
-  document.querySelectorAll(".turn--hero [data-seq]").forEach((el, i) => el.style.setProperty("--i", i));
 
   // Highlight the tab for the section in view.
   const tabs = [...document.querySelectorAll(".tabs a")];
