@@ -98,13 +98,14 @@ svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-
 .thread { padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2rem) 0; }
 .turn { max-width: var(--col); margin: 0 auto var(--turn); display: flex; flex-direction: column; gap: var(--gap); }
 .turn--wide { max-width: 72rem; }
+.turn:not(.turn--hero) { content-visibility: auto; contain-intrinsic-size: auto 60rem; }
 .turn--wide > .msg { width: min(100%, var(--col)); }
 .turn--wide > .msg--them { margin-left: max(0px, calc((100% - var(--col)) / 2)); }
 .turn--wide > .msg--me { margin-left: auto; margin-right: max(0px, calc((100% - var(--col)) / 2)); width: auto; max-width: min(85%, 34rem); }
 
 .msg {
   margin: 0; padding: 0.8rem 1.1rem; max-width: min(85%, 34rem);
-  border-radius: var(--r-bubble); font-size: 1.0625rem; line-height: 1.5; text-wrap: pretty;
+  border-radius: var(--r-bubble); font-size: 1.0625rem; line-height: 1.5;
 }
 .msg--them {
   align-self: flex-start; background: var(--cream); color: var(--ink);

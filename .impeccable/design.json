@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T17:04:38Z",
+  "title": "Design System: Claude Daigan",
+  "extensions": {
+    "colorMeta": {
+      "gold": {
+        "role": "primary",
+        "displayName": "Harvest Gold",
+        "canonical": "#f2c14e",
+        "tonalRamp": [
+          "#130900",
+          "#352300",
+          "#5a4000",
+          "#806109",
+          "#ae8100",
+          "#cfa852",
+          "#ebcd8f",
+          "#ffedc6"
+        ]
+      },
+      "cream": {
+        "role": "secondary",
+        "displayName": "Warm Cream",
+        "canonical": "#faf6ee",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#282624",
+          "#474541",
+          "#686661",
+          "#8c8982",
+          "#b1aea7",
+          "#d3d1cc",
+          "#f0eeeb"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night Deck",
+        "canonical": "#0d1b2b",
+        "tonalRamp": [
+          "#080b10",
+          "#21272f",
+          "#3d4651",
+          "#5b6775",
+          "#7a8b9f",
+          "#a1b0c1",
+          "#c7d2e0",
+          "#e8eff8"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "#122438",
+        "tonalRamp": [
+          "#070c10",
+          "#1f2730",
+          "#3b4654",
+          "#596879",
+          "#778ba3",
+          "#9eb0c5",
+          "#c4d3e3",
+          "#e7f0fa"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "Rail",
+        "canonical": "#1b324b",
+        "tonalRamp": [
+          "#070c11",
+          "#1e2732",
+          "#384656",
+          "#56687c",
+          "#738ca8",
+          "#9ab0c9",
+          "#c2d3e7",
+          "#e5f0fc"
+        ]
+      },
+      "rail-2": {
+        "role": "neutral",
+        "displayName": "Upper Rail",
+        "canonical": "#24405e",
+        "tonalRamp": [
+          "#060c12",
+          "#1c2734",
+          "#364759",
+          "#53687f",
+          "#6f8cad",
+          "#97b1ce",
+          "#bfd3ea",
+          "#e3f0fe"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#122438",
+        "tonalRamp": [
+          "#070c10",
+          "#1f2730",
+          "#3b4654",
+          "#596879",
+          "#778ba3",
+          "#9eb0c5",
+          "#c4d3e3",
+          "#e7f0fa"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Sea Mist",
+        "canonical": "#a9b8c9",
+        "tonalRamp": [
+          "#090b0f",
+          "#22272d",
+          "#3e464f",
+          "#5d6772",
+          "#7d8b9a",
+          "#a3afbd",
+          "#c9d2dd",
+          "#e9eff6"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(250, 246, 238, 0.14)",
+        "tonalRamp": [
+          "rgba(250,246,238,0.04)",
+          "rgba(250,246,238,0.07)",
+          "rgba(250,246,238,0.10)",
+          "rgba(250,246,238,0.14)",
+          "rgba(250,246,238,0.18)",
+          "rgba(250,246,238,0.24)",
+          "rgba(250,246,238,0.32)",
+          "rgba(250,246,238,0.45)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero answer only, inside its gold bubble."
+      },
+      "headline": {
+        "displayName": "Question / Headline",
+        "purpose": "Each section's question, used as the section heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Plan names, sample business names, the header name."
+      },
+      "price": {
+        "displayName": "Price",
+        "purpose": "Right-aligned bill prices in tabular figures."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Every message; the phone's own system sans."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Secondary messages, recipe meta, add-on lines."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Header status, tabs, the pinned label, terms."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Timestamps and Seen marks only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "pinned-lift",
+        "value": "0 1.5rem 3rem -1.5rem rgba(0, 0, 0, 0.5)",
+        "purpose": "The pinned price bill, the page's one card."
+      },
+      {
+        "name": "photo-lift",
+        "value": "0 1.25rem 2.5rem -1.25rem rgba(0, 0, 0, 0.6)",
+        "purpose": "Each sample post on the shelf."
+      },
+      {
+        "name": "send-lift",
+        "value": "0 0.5rem 1.25rem -0.5rem rgba(0, 0, 0, 0.55)",
+        "purpose": "The primary quick-reply chip only."
+      },
+      {
+        "name": "contact-ring-gold",
+        "value": "0 0 0 2px #f2c14e",
+        "purpose": "Ring around the header headshot."
+      },
+      {
+        "name": "contact-ring-navy",
+        "value": "0 0 0 3px #122438",
+        "purpose": "Ring around the portrait inside the about bubble."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for every state transition and the arrival."
+      },
+      {
+        "name": "arrive",
+        "value": "opacity 0.35 → 1, translateY 0.6rem → 0, 0.55s, 0.16s stagger",
+        "purpose": "The one authored moment: the opening exchange arrives like messages; disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(0.97) over 0.2s",
+        "purpose": "Chips and send buttons on :active."
+      },
+      {
+        "name": "photo-zoom",
+        "value": "transform: scale(1.03) over 0.6s",
+        "purpose": "Sample photo hover."
+      },
+      {
+        "name": "disclosure",
+        "value": "chevron rotate −45° → 45° over 0.25s",
+        "purpose": "Price rows and add-ons opening."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "52rem",
+        "purpose": "Sample shelf drops from three columns to two."
+      },
+      {
+        "name": "phone",
+        "value": "30rem",
+        "purpose": "Bubbles widen to 92%, chips and send buttons stretch, header phone icon drops, about bubble stacks."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Visitor bubble",
+      "kind": "custom",
+      "refersTo": "bubble-them",
+      "description": "Anything the business owner would say: cream bubble, left, ink text, tail bottom-left.",
+      "html": "<p class=\"ds-bubble ds-bubble--them\">Can you make my business look good online?</p>",
+      "css": ".ds-bubble { margin: 0; padding: 0.8rem 1.1rem; max-width: min(85%, 34rem); border-radius: 1.4rem; font-size: 1.0625rem; line-height: 1.5; text-wrap: pretty; align-self: flex-start; }\n.ds-bubble--them { background: #faf6ee; color: #122438; border-bottom-left-radius: 0.4rem; }"
+    },
+    {
+      "name": "Claude bubble",
+      "kind": "custom",
+      "refersTo": "bubble-me",
+      "description": "Claude's reply: gold bubble, right, ink text, tail bottom-right; the only gold fill in the system.",
+      "html": "<p class=\"ds-bubble ds-bubble--me\">Start with a free online check-up: I review your Facebook page and Google listing and send you 3 easy fixes in 2 days.</p>",
+      "css": ".ds-bubble { margin: 0; padding: 0.8rem 1.1rem; max-width: min(85%, 34rem); border-radius: 1.4rem; font-size: 1.0625rem; line-height: 1.5; text-wrap: pretty; align-self: flex-end; }\n.ds-bubble--me { background: #f2c14e; color: #122438; border-bottom-right-radius: 0.4rem; }"
+    },
+    {
+      "name": "Question heading bubble",
+      "kind": "custom",
+      "refersTo": "bubble-question",
+      "description": "Each section's question doubles as its heading — cream bubble in the display face at headline scale.",
+      "html": "<h2 class=\"ds-q\">How much does it cost?</h2>",
+      "css": ".ds-q { margin: 0; padding: 1rem 1.3rem; max-width: min(92%, 32rem); background: #faf6ee; color: #122438; border-radius: 1.4rem; border-bottom-left-radius: 0.4rem; align-self: flex-start; font: 700 clamp(1.5rem, 4.2vw, 2.25rem)/1.12 \"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.02em; text-wrap: balance; }"
+    },
+    {
+      "name": "Quick-reply chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Outlined gold pill for a secondary next step; fills rail on hover, presses at 0.97.",
+      "html": "<a class=\"ds-chip\" href=\"#prices\">See prices</a>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; padding: 0.65rem 1.15rem; border-radius: 999px; border: 1.5px solid #f2c14e; background: transparent; color: #f2c14e; font: 650 1rem/1 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; text-decoration: none; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.16,1,0.3,1), transform 0.2s cubic-bezier(0.16,1,0.3,1); }\n.ds-chip:hover { background: #1b324b; }\n.ds-chip:active { transform: scale(0.97); }\n.ds-chip:focus-visible { outline: 3px solid #f2c14e; outline-offset: 3px; }"
+    },
+    {
+      "name": "Primary quick-reply chip",
+      "kind": "chip",
+      "refersTo": "chip-primary",
+      "description": "The free check-up: gold-filled chip with the system's one lift under a control.",
+      "html": "<a class=\"ds-chip ds-chip--primary\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3c4.97 0 8 2.6 8 7.5S16.97 18 12 18c-.8 0-1.56-.06-2.27-.18L6 21v-4.2C4.73 15.5 4 13.6 4 10.5 4 5.6 7.03 3 12 3Z\"/><path d=\"M9.2 8.3c.3-.4.8-.4 1 .1l.5 1.1c.1.3 0 .6-.2.8l-.3.3c.4.9 1.1 1.6 2 2l.3-.3c.2-.2.5-.3.8-.2l1.1.5c.5.2.5.7.1 1-.6.6-1.5.8-2.3.4a6.3 6.3 0 0 1-3.4-3.4c-.4-.8-.2-1.7.4-2.3Z\"/></svg>Free check-up on Viber</a>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; padding: 0.65rem 1.15rem; border-radius: 999px; border: 1.5px solid #f2c14e; font: 650 1rem/1 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; text-decoration: none; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.16,1,0.3,1), transform 0.2s cubic-bezier(0.16,1,0.3,1); }\n.ds-chip--primary { background: #f2c14e; color: #122438; border-color: #f2c14e; box-shadow: 0 0.5rem 1.25rem -0.5rem rgba(0,0,0,0.55); }\n.ds-chip--primary:hover { background: #f6cf6f; }\n.ds-chip--primary:active { transform: scale(0.97); }\n.ds-chip--primary:focus-visible { outline: 3px solid #faf6ee; outline-offset: 3px; }\n.ds-ico { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; flex: none; }"
+    },
+    {
+      "name": "Section tab pill",
+      "kind": "nav",
+      "refersTo": "tab",
+      "description": "Scrolling section nav in the sticky header; the tab in view turns gold with ink text.",
+      "html": "<nav class=\"ds-tabs\" aria-label=\"Sections\"><a class=\"ds-tab\" href=\"#samples\">Samples</a><a class=\"ds-tab\" href=\"#prices\" aria-current=\"true\">Prices</a><a class=\"ds-tab\" href=\"#steps\">Steps</a><a class=\"ds-tab\" href=\"#about\">About</a><a class=\"ds-tab\" href=\"#message\">Message</a></nav>",
+      "css": ".ds-tabs { display: flex; gap: 0.25rem; overflow-x: auto; scrollbar-width: none; padding: 0.6rem 0; }\n.ds-tabs::-webkit-scrollbar { display: none; }\n.ds-tab { flex: none; padding: 0.4rem 0.85rem; border-radius: 999px; background: #1b324b; color: #faf6ee; font: 600 0.875rem/1.4 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; text-decoration: none; transition: background-color 0.2s cubic-bezier(0.16,1,0.3,1), color 0.2s cubic-bezier(0.16,1,0.3,1); }\n.ds-tab:hover, .ds-tab[aria-current=\"true\"] { background: #f2c14e; color: #122438; }\n.ds-tab:focus-visible { outline: 3px solid #f2c14e; outline-offset: 3px; }"
+    },
+    {
+      "name": "Pinned price bill",
+      "kind": "card",
+      "refersTo": "pinned-bill",
+      "description": "The page's one card: rail ground, cream ledger rule, details rows that open in place, price flush right.",
+      "html": "<div class=\"ds-bill\" role=\"group\" aria-label=\"Pinned message: prices\"><p class=\"ds-bill__label\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9 3.5h6l-1 5 3 3v1.5H7V11.5l3-3z\"/><path d=\"M12 13v7.5\"/></svg>Pinned</p><div class=\"ds-bill__rows\"><details class=\"ds-row\"><summary><span class=\"ds-row__name\">Plan A: Stay Active</span><span class=\"ds-row__price\">₱6,000<small>a month</small></span></summary><ul><li>8 designed posts and 2 reels a month</li><li>A monthly content calendar you approve first</li></ul></details><details class=\"ds-row\" open><summary><span class=\"ds-row__name\">Plan B: Grow <span class=\"ds-tag\">recommended</span></span><span class=\"ds-row__price\">₱10,000<small>a month</small></span></summary><ul><li>12 designed posts and 4 reels a month</li><li>4 Google Business Profile updates</li></ul></details></div></div>",
+      "css": ".ds-bill { background: #1b324b; color: #faf6ee; border: 1px solid rgba(250,246,238,0.14); border-radius: 1.5rem; padding: clamp(1rem, 3vw, 1.75rem); box-shadow: 0 1.5rem 3rem -1.5rem rgba(0,0,0,0.5); }\n.ds-bill__label { margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.4rem; color: #f2c14e; font: 650 0.875rem/1.4 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; }\n.ds-bill__rows { border-top: 2px solid #faf6ee; padding-top: 0.25rem; }\n.ds-row { border-bottom: 1px solid rgba(250,246,238,0.14); }\n.ds-row summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1rem 0.25rem; min-height: 3rem; }\n.ds-row summary::-webkit-details-marker { display: none; }\n.ds-row__name { font: 650 clamp(1.05rem, 2.4vw, 1.25rem)/1.3 \"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 0.5rem; }\n.ds-row__price { font: 700 clamp(1.15rem, 2.8vw, 1.5rem)/1 \"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif; color: #f2c14e; white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }\n.ds-row__price small { display: block; font: 500 0.75rem/1.4 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; color: #a9b8c9; }\n.ds-row[open] .ds-row__name, .ds-row:has(.ds-tag) .ds-row__name { color: #f2c14e; }\n.ds-row ul { margin: 0 0 1.1rem; padding: 0 0.25rem 0 2.6rem; color: #faf6ee; max-width: 60ch; font: 400 1.0625rem/1.55 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; }\n.ds-row li::marker { color: #f2c14e; }\n.ds-tag { font: 700 0.75rem/1 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; background: #f2c14e; color: #122438; padding: 0.3rem 0.55rem; border-radius: 999px; }\n.ds-ico { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Composer",
+      "kind": "input",
+      "refersTo": "composer-input",
+      "description": "The closing action: name field, radio chips for what they want, three send targets.",
+      "html": "<form class=\"ds-composer\"><input class=\"ds-field\" type=\"text\" placeholder=\"Your business name\" aria-label=\"Your business name\"><div class=\"ds-want\" role=\"radiogroup\" aria-label=\"What would you like?\"><label class=\"ds-radio\"><input type=\"radio\" name=\"want\" checked><span>Free check-up</span></label><label class=\"ds-radio\"><input type=\"radio\" name=\"want\"><span>Free sample</span></label><label class=\"ds-radio\"><input type=\"radio\" name=\"want\"><span>A plan</span></label></div><div class=\"ds-send\"><button type=\"submit\" class=\"ds-sendbtn ds-sendbtn--primary\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3c4.97 0 8 2.6 8 7.5S16.97 18 12 18c-.8 0-1.56-.06-2.27-.18L6 21v-4.2C4.73 15.5 4 13.6 4 10.5 4 5.6 7.03 3 12 3Z\"/><path d=\"M9.2 8.3c.3-.4.8-.4 1 .1l.5 1.1c.1.3 0 .6-.2.8l-.3.3c.4.9 1.1 1.6 2 2l.3-.3c.2-.2.5-.3.8-.2l1.1.5c.5.2.5.7.1 1-.6.6-1.5.8-2.3.4a6.3 6.3 0 0 1-3.4-3.4c-.4-.8-.2-1.7.4-2.3Z\"/></svg>Send on Viber</button><button type=\"button\" class=\"ds-sendbtn\">Text</button></div></form>",
+      "css": ".ds-composer { display: grid; gap: 0.75rem; padding: 0.75rem; border-radius: 1.75rem; background: #0d1b2b; border: 1px solid rgba(250,246,238,0.14); max-width: 40rem; }\n.ds-field { width: 100%; min-height: 3.25rem; padding: 0.8rem 1.25rem; border-radius: 999px; border: 1.5px solid #24405e; background: #1b324b; color: #faf6ee; font: 500 1.0625rem/1.4 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; transition: border-color 0.2s cubic-bezier(0.16,1,0.3,1); }\n.ds-field::placeholder { color: #9fb0c4; }\n.ds-field:focus { outline: none; border-color: #f2c14e; }\n.ds-want { display: flex; flex-wrap: wrap; gap: 0.5rem; }\n.ds-radio { position: relative; }\n.ds-radio input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }\n.ds-radio span { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0.5rem 1rem; border-radius: 999px; border: 1.5px solid #24405e; color: #faf6ee; font: 600 0.9375rem/1.4 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; transition: background-color 0.2s cubic-bezier(0.16,1,0.3,1), color 0.2s cubic-bezier(0.16,1,0.3,1); }\n.ds-radio input:checked + span { background: #faf6ee; color: #122438; border-color: #faf6ee; }\n.ds-radio input:focus-visible + span { outline: 3px solid #f2c14e; outline-offset: 2px; }\n.ds-send { display: flex; flex-wrap: wrap; gap: 0.5rem; }\n.ds-sendbtn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 3rem; padding: 0.65rem 1.2rem; border-radius: 999px; border: 1.5px solid #f2c14e; background: transparent; color: #f2c14e; font: 650 1rem/1 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.16,1,0.3,1), transform 0.2s cubic-bezier(0.16,1,0.3,1); }\n.ds-sendbtn:hover { background: #1b324b; }\n.ds-sendbtn:active { transform: scale(0.97); }\n.ds-sendbtn--primary { background: #f2c14e; color: #122438; flex: 1 1 12rem; }\n.ds-sendbtn--primary:hover { background: #f6cf6f; }\n.ds-sendbtn:focus-visible { outline: 3px solid #f2c14e; outline-offset: 3px; }\n.ds-ico { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Sample card",
+      "kind": "card",
+      "refersTo": "sample-card",
+      "description": "A 4:5 post with its recipe card underneath: fictional business in display, category and town in mist.",
+      "html": "<figure class=\"ds-sample\"><div class=\"ds-sample__frame\" role=\"img\" aria-label=\"4:5 concept post\">4:5 post</div><figcaption class=\"ds-recipe\"><span class=\"ds-recipe__name\">Kape Loboc</span><span>Riverside cafe · Loboc</span><span class=\"ds-recipe__goal\">Launch a new drink</span></figcaption></figure>",
+      "css": ".ds-sample { margin: 0; display: grid; gap: 0.7rem; width: 18rem; }\n.ds-sample__frame { display: grid; place-items: center; aspect-ratio: 4 / 5; border-radius: 1rem; background: linear-gradient(160deg, #24405e, #122438); color: #a9b8c9; box-shadow: 0 1.25rem 2.5rem -1.25rem rgba(0,0,0,0.6); overflow: hidden; font: 600 0.75rem/1 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; letter-spacing: 0.02em; transition: transform 0.6s cubic-bezier(0.16,1,0.3,1); }\n.ds-sample:hover .ds-sample__frame { transform: scale(1.03); }\n.ds-recipe { display: grid; gap: 0.1rem; padding: 0 0.25rem; font: 400 0.9375rem/1.45 system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; color: #a9b8c9; }\n.ds-recipe__name { font: 700 1.125rem/1.25 \"Bricolage Grotesque\", ui-sans-serif, system-ui, sans-serif; color: #faf6ee; letter-spacing: -0.01em; }\n.ds-recipe__goal { color: #faf6ee; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Pinned Conversation",
+    "overview": "The page is a night-mode message thread, not a website that happens to mention chatting. A Bohol business owner's question sits in a cream bubble on the left; Claude's answer sits in a gold bubble on the right, set at headline size because in this world the answer is the headline. Prices are not a table but a pinned message. The testimonials section does not exist because testimonials do not exist; the closest thing is six labelled concept posts arriving as photos, the way an owner would actually receive them.\n\nEverything follows from that one premise. Rhythm is turn-taking, not sectioning: each exchange is separated by a large turn gap and nothing else. Type splits by who is talking — Bricolage Grotesque for every voiced statement (the answer, the questions, the plan names, the prices) and the phone's own system sans for the connective prose, which keeps the page feeling native and light on the mid-range Android that carries most of this traffic. Colour is grammar, not decoration: cream means the owner, gold means Claude, navy is the room.\n\nThe world is dense with small true details — timestamps, a \"Seen\" mark, a green online dot, an \"Add-ons\" disclosure — and quiet everywhere else. There is no photography of offices, no icon triad, no gradient, no stock face. The one photograph of a person is the real one.",
+    "keyCharacteristics": [
+      "Two-voice chat: cream bubbles left, gold bubbles right, navy ground.",
+      "The h1 lives inside a gold bubble, not above the thread.",
+      "One pinned bill carries every price; rows open in place.",
+      "A composer at the foot, with radio chips and three send targets, is the only conversion surface.",
+      "One authored motion: the opening exchange arrives, then stops."
+    ],
+    "rules": [
+      {
+        "name": "The Two Voices Rule",
+        "section": "colors",
+        "body": "Cream is what the visitor says, gold is what Claude says, navy is the room. A colour never decorates — it attributes. If a new element cannot be assigned to a speaker, it is chrome and belongs in night or rail."
+      },
+      {
+        "name": "The Gold Is Spoken Rule",
+        "section": "colors",
+        "body": "Gold appears as a bubble, a chip, a price, a tag, or a ring. It never fills a band, a section background, or a gradient; there is no gold wash anywhere on the page."
+      },
+      {
+        "name": "The Mist Is Meta Rule",
+        "section": "colors",
+        "body": "Mist never carries a message. It is legal to use it only for status, timestamps, units, terms and helper text at 0.75–0.9375rem."
+      },
+      {
+        "name": "The Two Faces Rule",
+        "section": "typography",
+        "body": "Bricolage carries anything with a voice or a number; the system sans carries everything that explains it. Never set a paragraph in the display face, and never set a headline, plan name, or price in the system sans."
+      },
+      {
+        "name": "The Tightening Rule",
+        "section": "typography",
+        "body": "Display tracking is negative and grows tighter as the type grows (−0.01em at title, −0.035em at display). Never letter-space display type; the only positive tracking in the system is 0.02em on micro stamps."
+      },
+      {
+        "name": "The 17px Floor Rule",
+        "section": "typography",
+        "body": "Message text never goes below 1.0625rem (17px), and metadata never below 0.75rem (12px). The page is read between customers on a phone."
+      },
+      {
+        "name": "The Turn Rule",
+        "section": "layout",
+        "body": "Separation is a turn, never a section padding. Nothing gets a top border, a band, or a background change to mark a new section — only a gap."
+      },
+      {
+        "name": "The One Column Rule",
+        "section": "layout",
+        "body": "Speech lives in 46rem. The shelf is the single sanctioned exception; do not widen another block to full bleed."
+      },
+      {
+        "name": "The Pick-Up Rule",
+        "section": "elevation",
+        "body": "If it cannot be picked up — a section, a headline, a divider — it gets no shadow. Tonal steps carry depth everywhere else."
+      },
+      {
+        "name": "The Tail Rule",
+        "section": "shapes",
+        "body": "1.4rem corners, 0.4rem on the speaker's bottom corner. A bubble without a tail is not a speaker; a bubble with two tails is a shape error."
+      },
+      {
+        "name": "The Pill Rule",
+        "section": "shapes",
+        "body": "If it is pressed, it is a pill or a circle. Rectangles are content (rows, photos, cards), never controls."
+      }
+    ],
+    "dos": [
+      "**Do** put every spoken line in a bubble with a speaker: cream left for the visitor, gold right for Claude, ink text on both.",
+      "**Do** keep the h1 inside the opening gold bubble and the free check-up line directly beneath it, before the chips.",
+      "**Do** keep every price inside the one pinned bill, details rows, Plan B open and tagged.",
+      "**Do** make the footer of the page a composer whose submit opens Viber, SMS or email with a prefilled message.",
+      "**Do** label concept work in the thread itself, in the same voice, and keep the real headshot and CD monogram as the only identity marks.",
+      "**Do** hold message text at ≥1.0625rem and controls at ≥2.75rem."
+    ],
+    "donts": [
+      "**Don't** add a hero headline block, eyebrow, or kicker above the thread; the first thing in the body is the visitor's question.",
+      "**Don't** introduce a light section, a gold band, or a gradient to break up the scroll — separation is a turn gap.",
+      "**Don't** rebuild the prices as a comparison table or three-column cards; the bill's rows are the pattern.",
+      "**Don't** add testimonials, client logos, star ratings, or follower counts; none exist, and the page never fakes them.",
+      "**Don't** set prose in Bricolage or a headline/price in the system sans.",
+      "**Don't** add a second animation or a scroll reveal; the opening exchange is the only authored motion, and it disappears under reduced-motion.",
+      "**Don't** use hard offset shadows, bevels, or inner glows; depth is the four navy steps plus a soft downward lift."
+    ]
+  }
+}
