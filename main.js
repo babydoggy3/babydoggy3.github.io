@@ -22,7 +22,9 @@
   const err = document.getElementById("composer-error");
   const PHONE = "+639176225100";
   const EMAIL = "daigan.claude@gmail.com";
-  let via = "viber";
+  const MESSENGER = "https://m.me/61597123493255";
+  const note = document.getElementById("composer-note");
+  let via = "messenger";
   form.querySelectorAll("[data-via]").forEach((b) => b.addEventListener("click", () => { via = b.dataset.via; }));
   biz.addEventListener("input", () => { biz.removeAttribute("aria-invalid"); err.hidden = true; });
 
@@ -38,6 +40,11 @@
     const want = form.querySelector('input[name="want"]:checked')?.value || "the free online check-up";
     const text = `Hi Claude! This is ${name}. I'd like ${want}.`;
     const enc = encodeURIComponent(text);
+    if (via === "messenger") {
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(() => { note.hidden = false; }, () => {});
+      window.open(MESSENGER, "_blank", "noopener");
+      return;
+    }
     const url = via === "viber"
       ? `viber://chat?number=${encodeURIComponent(PHONE)}&draft=${enc}`
       : via === "sms"

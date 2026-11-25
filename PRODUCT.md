@@ -40,7 +40,7 @@ Packages (owner's rate card, Nov 2026):
 - Add-ons: extra post ₱400; extra reel ₱1,200; promo/event pack ₱3,500; menu/price list redesign ₱1,500–2,500; on-site shoot ₱2,000; content calendar only ₱2,500; customer & competitor research ₱3,000; review boost kit ₱1,500; boosted post management ₱1,500/month + ad budget; one-page website ₱6,000–9,000.
 - Terms: monthly plans paid in advance (GCash, Maya, bank), 3-month minimum then month-to-month; calendar approved by the client before posting; 2 revision rounds; client keeps finished work once paid; no promised follower/sales numbers; ad spend paid by the client directly to Meta.
 - ASSUMPTION (question round timed out): all prices are shown publicly.
-- ASSUMPTION: contact = Viber/call 0917 622 5100 and email daigan.claude@gmail.com; Messenger link to be added when the Facebook Page is live.
+- Contact: Facebook Page "Claude Daigan - Social Media & Marketing" (https://www.facebook.com/profile.php?id=61597123493255, Messenger m.me/61597123493255) is the primary channel; also Viber/call/text 0917 622 5100 and email daigan.claude@gmail.com.
 
 ## Brand Commitments
 
