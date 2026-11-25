@@ -1,0 +1,7 @@
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - styles.css
+  - tools/
+  - README.md
+include: []
