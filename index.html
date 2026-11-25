@@ -274,7 +274,6 @@ font: 650 1rem var(--body); cursor: pointer; transition: background-color 0.2s v
 .chip { flex: 1 1 auto; justify-content: center; }
 .send__btn { flex: 1 1 auto; }
 .who__status { white-space: normal; line-height: 1.3; }
-.head-actions a[href^="tel:"] { display: none; }
 .msg--about { grid-template-columns: 1fr; justify-items: start; }
 .msg--about img { width: 4rem; height: 4rem; }
 }
@@ -287,10 +286,7 @@ font: 650 1rem var(--body); cursor: pointer; transition: background-color 0.2s v
 <svg width="0" height="0" class="sprite" aria-hidden="true">
   <symbol id="i-messenger" viewBox="0 0 24 24"><path d="M12 3.2c-4.9 0-8.8 3.6-8.8 8.2 0 2.5 1.2 4.8 3 6.3v3.1l2.9-1.6c.9.3 1.9.4 2.9.4 4.9 0 8.8-3.6 8.8-8.2S16.9 3.2 12 3.2Z"/><path d="m7.6 13.9 3-3.2 2.1 1.9 3.6-3.1-3 3.2-2.1-1.9z"/></symbol>
   <symbol id="i-fb" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M15.5 8.5h-1.6c-1 0-1.7.7-1.7 1.7v10.3M10 13h5"/></symbol>
-  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5Z"/><path d="M9.1 8.2c.3-.5.7-.5 1-.1l.8 1.6c.1.3 0 .6-.2.8l-.4.4c.5 1.2 1.5 2.2 2.8 2.8l.4-.4c.2-.2.5-.3.8-.2l1.6.8c.4.2.4.7-.1 1-.6.5-1.4.8-2.2.6-2.4-.6-4.7-2.9-5.3-5.3-.2-.8.1-1.6.6-2.2Z"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.2l1.4 4-2 1.3a10.5 10.5 0 0 0 7 7l1.3-2 4 1.4v2.2A2 2 0 0 1 18.6 19.5 15.6 15.6 0 0 1 4.5 5.4a2 2 0 0 1 2.1-1.9Z"/></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
-  <symbol id="i-sms" viewBox="0 0 24 24"><path d="M4 5.5h16v10H9l-4.5 3.5v-3.5H4z"/><path d="M8 10.5h.01M12 10.5h.01M16 10.5h.01"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M9 3.5h6l-1 5 3 3v1.5H7V11.5l3-3z"/><path d="M12 13v7.5"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 4.5 4.5 10.5-11"/></symbol>
@@ -308,8 +304,6 @@ font: 650 1rem var(--body); cursor: pointer; transition: background-color 0.2s v
     </a>
     <nav class="head-actions" aria-label="Contact">
       <a class="icon-btn" href="https://m.me/61597123493255" aria-label="Message on Facebook Messenger"><svg><use href="#i-messenger"/></svg></a>
-      <a class="icon-btn" href="https://wa.me/639176225100" aria-label="Message on WhatsApp"><svg><use href="#i-wa"/></svg></a>
-      <a class="icon-btn" href="tel:+639176225100" aria-label="Call 0917 622 5100"><svg><use href="#i-phone"/></svg></a>
       <a class="icon-btn" href="mailto:claude_daigan@protonmail.com" aria-label="Email claude_daigan@protonmail.com"><svg><use href="#i-mail"/></svg></a>
     </nav>
   </div>
@@ -332,7 +326,7 @@ font: 650 1rem var(--body); cursor: pointer; transition: background-color 0.2s v
     <p class="msg msg--me">Start with a free online check-up: I review your Facebook page and Google listing and send you 3 easy fixes in&nbsp;2&nbsp;days.</p>
     <div class="chips">
       <a class="chip chip--primary" href="https://m.me/61597123493255"><svg><use href="#i-messenger"/></svg>Free check-up on Messenger</a>
-      <a class="chip" href="https://wa.me/639176225100?text=Hi%20Claude!%20I%27d%20like%20the%20free%20online%20check-up%20for%20my%20business."><svg><use href="#i-wa"/></svg>WhatsApp</a>
+      <a class="chip" href="mailto:claude_daigan@protonmail.com?subject=Free%20online%20check-up&amp;body=Hi%20Claude!%20I%27d%20like%20the%20free%20online%20check-up%20for%20my%20business."><svg><use href="#i-mail"/></svg>Email me</a>
       <a class="chip" href="#prices">See prices</a>
     </div>
     <figure class="msg msg--photos">
@@ -482,21 +476,19 @@ font: 650 1rem var(--body); cursor: pointer; transition: background-color 0.2s v
       </fieldset>
       <div class="send">
         <button type="submit" class="send__btn send__btn--primary" data-via="messenger"><svg><use href="#i-messenger"/></svg>Send on Messenger</button>
-        <button type="submit" class="send__btn" data-via="whatsapp"><svg><use href="#i-wa"/></svg>WhatsApp</button>
-        <button type="submit" class="send__btn" data-via="sms"><svg><use href="#i-sms"/></svg>Text</button>
         <button type="submit" class="send__btn" data-via="email"><svg><use href="#i-mail"/></svg>Email</button>
       </div>
       <p class="composer__note" id="composer-note" role="status" hidden>Your message is copied. Paste it into the Messenger chat that just opened.</p>
       <p class="composer__error" id="composer-error" role="alert" hidden>Type your business name first, so I know who's asking.</p>
     </form>
-    <p class="direct">Or reach me directly: <span><a href="https://www.facebook.com/profile.php?id=61597123493255">Facebook Page</a> ·</span> <span><a href="tel:+639176225100">0917&nbsp;622&nbsp;5100</a> (call, text or WhatsApp) ·</span> <span><a href="mailto:claude_daigan@protonmail.com">claude_daigan@protonmail.com</a></span></p>
+    <p class="direct">Or reach me directly: <span><a href="https://www.facebook.com/profile.php?id=61597123493255">Facebook Page</a> ·</span> <span><a href="mailto:claude_daigan@protonmail.com">claude_daigan@protonmail.com</a></span></p>
   </section>
 </main>
 
 <footer class="foot">
   <img src="assets/logo-gold.webp" width="64" height="56" alt="CD monogram">
   <p>Claude Daigan · Social media &amp; marketing · Tagbilaran City, Bohol</p>
-  <p><a href="https://www.facebook.com/profile.php?id=61597123493255">Facebook Page</a> · <a href="https://wa.me/639176225100">WhatsApp</a> · <a href="mailto:claude_daigan@protonmail.com">Email</a></p>
+  <p><a href="https://www.facebook.com/profile.php?id=61597123493255">Facebook Page</a> · <a href="mailto:claude_daigan@protonmail.com">Email</a></p>
   <p class="foot__fine">Sample posts on this page are concepts for fictional businesses; their photos are AI-generated. © 2026 Claude Daigan.</p>
 </footer>
 

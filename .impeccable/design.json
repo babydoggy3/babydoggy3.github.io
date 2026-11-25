@@ -237,7 +237,7 @@
       {
         "name": "phone",
         "value": "30rem",
-        "purpose": "Bubbles widen to 92%, chips and send buttons stretch, header phone icon drops, about bubble stacks."
+        "purpose": "Bubbles widen to 92%, chips and send buttons stretch, header keeps two icons, about bubble stacks."
       }
     ]
   },
@@ -385,7 +385,7 @@
       "**Do** put every spoken line in a bubble with a speaker: cream left for the visitor, gold right for Claude, `ink` text on both.",
       "**Do** keep the h1 inside the opening gold bubble and the free check-up line directly beneath it, before the chips.",
       "**Do** keep every price inside the one pinned bill, `<details>` rows, Plan B open and tagged.",
-      "**Do** end the thread with the composer, whose submit opens WhatsApp, SMS or email with a prefilled message; the `<footer>` below it is identity only.",
+      "**Do** end the thread with the composer, whose submit opens Messenger or email with a prefilled message; the `<footer>` below it is identity only.",
       "**Do** label concept work in the thread itself, in the same voice, and keep the real headshot and CD monogram as the only identity marks.",
       "**Do** hold spoken messages at 1.0625rem (17px) and every control at ≥2.75rem (44px)."
     ],

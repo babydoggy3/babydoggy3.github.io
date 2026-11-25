@@ -24,6 +24,6 @@ STORY: An owner sees their own question answered, sees six finished posts arrive
 
 FIRST VIEWPORT: Chat header (real headshot, name, "Tagbilaran, Bohol · replies within a day", Viber + email buttons). Below, owner bubble "Can you make my business look good online?" then Claude's gold bubble at display size "Yes. Reels, posts and Google listings, made from your own photos." then a photo bubble of two concept posts, then quick-reply chips: primary "Free check-up on Viber", "Email me", "See prices".
 
-FORM: grounded candidate 6 of 7 (Messenger thread), seed:1d1d5ba4b7d3b8b3. Signature interaction: the composer at the foot takes the business name and opens Viber, SMS or email with a ready message.
+FORM: grounded candidate 6 of 7 (Messenger thread), seed:1d1d5ba4b7d3b8b3. Signature interaction: the composer at the foot takes the business name and opens Messenger, SMS or email with a ready message.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

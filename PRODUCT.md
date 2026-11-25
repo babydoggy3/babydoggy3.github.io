@@ -16,7 +16,7 @@ Owners and managers of small, owner-run businesses in Bohol, Philippines (Tagbil
 
 ## Product Purpose
 
-Marketing site for Claude Daigan's freelance social media & marketing service. Success = the visitor sends a message (WhatsApp/call or email) asking for the free online check-up, a free sample, or a package.
+Marketing site for Claude Daigan's freelance social media & marketing service. Success = the visitor sends a message (Messenger or email) asking for the free online check-up, a free sample, or a package.
 
 ## Positioning
 
@@ -40,7 +40,7 @@ Packages (owner's rate card, Nov 2026):
 - Add-ons: extra post ₱400; extra reel ₱1,200; promo/event pack ₱3,500; menu/price list redesign ₱1,500–2,500; on-site shoot ₱2,000; content calendar only ₱2,500; customer & competitor research ₱3,000; review boost kit ₱1,500; boosted post management ₱1,500/month + ad budget; one-page website ₱6,000–9,000.
 - Terms: monthly plans paid in advance (GCash, Maya, bank), 3-month minimum then month-to-month; calendar approved by the client before posting; 2 revision rounds; client keeps finished work once paid; no promised follower/sales numbers; ad spend paid by the client directly to Meta.
 - ASSUMPTION (question round timed out): all prices are shown publicly.
-- Contact: Facebook Page "Claude Daigan - Social Media & Marketing" (https://www.facebook.com/profile.php?id=61597123493255, Messenger m.me/61597123493255) is the primary channel; also WhatsApp/call/text 0917 622 5100 and email claude_daigan@protonmail.com.
+- Contact: Facebook Page "Claude Daigan - Social Media & Marketing" (https://www.facebook.com/profile.php?id=61597123493255, Messenger m.me/61597123493255) is the primary channel; also email claude_daigan@protonmail.com. No phone number is published (owner request, 2026-11-25).
 
 ## Brand Commitments
 
@@ -60,7 +60,7 @@ Packages (owner's rate card, Nov 2026):
 
 1. Show the work first; the samples are the pitch.
 2. Prices and process are plain and upfront; the free check-up lowers the first step.
-3. Local and personal: a real person in Tagbilaran, reachable on WhatsApp.
+3. Local and personal: a real person in Tagbilaran, reachable on Messenger.
 4. Truthful: concept work is labelled, nothing is promised that the terms exclude.
 
 ## Accessibility & Inclusion

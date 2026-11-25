@@ -16,11 +16,10 @@
     byId.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
   }
 
-  // Composer: build a ready-to-send message and open Messenger, WhatsApp, SMS or email.
+  // Composer: build a ready-to-send message and open Messenger or email.
   const form = document.getElementById("composer");
   const biz = document.getElementById("biz");
   const err = document.getElementById("composer-error");
-  const PHONE = "+639176225100";
   const EMAIL = "claude_daigan@protonmail.com";
   const MESSENGER = "https://m.me/61597123493255";
   const note = document.getElementById("composer-note");
@@ -45,11 +44,7 @@
       window.open(MESSENGER, "_blank", "noopener");
       return;
     }
-    const url = via === "whatsapp"
-      ? `https://wa.me/${PHONE.replace(/\D/g, "")}?text=${enc}`
-      : via === "sms"
-        ? `sms:${PHONE}?&body=${enc}`
-        : `mailto:${EMAIL}?subject=${encodeURIComponent(`${name}: ${want}`)}&body=${enc}`;
+    const url = `mailto:${EMAIL}?subject=${encodeURIComponent(`${name}: ${want}`)}&body=${enc}`;
     window.location.href = url;
   });
 })();

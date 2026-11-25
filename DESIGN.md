@@ -188,7 +188,7 @@ A four-step night, two voices, and a mist for everything said quietly.
 
 One centred column, `--col` 46rem (736px), holding every spoken line; the header caps at 50rem so the avatar and the tabs share the thread's optical edge. Vertical rhythm comes from a single unit, `--turn` clamp(4.5rem, 11vw, 8rem), applied as the gap between exchanges; inside an exchange, bubbles stack at `--gap` clamp(0.5rem, 1.4vw, 0.75rem). Gutters are clamp(1rem, 4vw, 2rem). The one wide surface is the sample shelf, which opens the turn to 72rem so six posts sit three across, while its question and its closing note stay pinned to the 46rem column via asymmetric auto margins.
 
-Two breakpoints. At 52rem the shelf drops to two columns. At 30rem bubbles widen to 92% of the column, chips and send buttons stretch to fill their row, the phone icon leaves the header (the WhatsApp icon stays), the about bubble stacks portrait over text, and the header status wraps to two lines instead of truncating. Every control keeps a ≥2.75rem hit area, and the composer input is 3.25rem.
+Two breakpoints. At 52rem the shelf drops to two columns. At 30rem bubbles widen to 92% of the column, chips and send buttons stretch to fill their row, the header keeps two icons (the WhatsApp icon stays), the about bubble stacks portrait over text, and the header status wraps to two lines instead of truncating. Every control keeps a ≥2.75rem hit area, and the composer input is 3.25rem.
 
 ### Named Rules
 **The Turn Rule.** Separation is a turn, never a section padding. Nothing gets a top border, a band, or a background change to mark a new section — only a gap.
@@ -249,7 +249,7 @@ Night ground, hairline top, centred: the gold CD monogram at 4.5rem, the name li
 - **Do** put every spoken line in a bubble with a speaker: cream left for the visitor, gold right for Claude, `ink` text on both.
 - **Do** keep the h1 inside the opening gold bubble and the free check-up line directly beneath it, before the chips.
 - **Do** keep every price inside the one pinned bill, `<details>` rows, Plan B open and tagged.
-- **Do** end the thread with the composer, whose submit opens WhatsApp, SMS or email with a prefilled message; the `<footer>` below it is identity only.
+- **Do** end the thread with the composer, whose submit opens Messenger or email with a prefilled message; the `<footer>` below it is identity only.
 - **Do** label concept work in the thread itself, in the same voice, and keep the real headshot and CD monogram as the only identity marks.
 - **Do** hold spoken messages at 1.0625rem (17px) and every control at ≥2.75rem (44px).
 
