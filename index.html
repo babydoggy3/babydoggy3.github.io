@@ -47,7 +47,7 @@
   <nav class="tabs" aria-label="Sections">
     <a href="#samples">Samples</a>
     <a href="#prices">Prices</a>
-    <a href="#steps">How it works</a>
+    <a href="#steps">Steps</a>
     <a href="#about">About</a>
     <a href="#message">Message</a>
   </nav>
@@ -67,8 +67,8 @@
       <a class="chip" href="#prices">See prices</a>
     </div>
     <figure class="msg msg--photos" data-seq>
-      <img src="assets/work/cafe-540.webp" srcset="assets/work/cafe-360.webp 360w, assets/work/cafe-540.webp 540w, assets/work/cafe-1080.webp 1080w" sizes="(max-width: 30rem) 45vw, 13rem" width="540" height="675" alt="Concept post for a riverside cafe: an iced ube cold brew on a table above the Loboc River">
-      <img src="assets/work/dive-540.webp" srcset="assets/work/dive-360.webp 360w, assets/work/dive-540.webp 540w, assets/work/dive-1080.webp 1080w" sizes="(max-width: 30rem) 45vw, 13rem" width="540" height="675" alt="Concept post for a dive shop: a beginner diver beside a sea turtle on a coral reef">
+      <img src="assets/work/bakery-540.webp" srcset="assets/work/bakery-360.webp 360w, assets/work/bakery-540.webp 540w, assets/work/bakery-1080.webp 1080w" sizes="(max-width: 30rem) 45vw, 13rem" width="540" height="675" alt="Concept post for a bakery: pan de sal out of the oven at 6 AM">
+      <img src="assets/work/pasalubong-540.webp" srcset="assets/work/pasalubong-360.webp 360w, assets/work/pasalubong-540.webp 540w, assets/work/pasalubong-1080.webp 1080w" sizes="(max-width: 30rem) 45vw, 13rem" width="540" height="675" alt="Concept post for a pasalubong shop: calamay, peanut kisses and ube jam">
       <figcaption>Two of six concept posts · <a href="#samples">see all</a></figcaption>
     </figure>
   </section>
@@ -82,7 +82,6 @@
         <dl class="recipe">
           <dt>Kape Loboc</dt><dd>Riverside cafe · Loboc</dd>
           <dt class="vh">Goal</dt><dd>Launch a new drink</dd>
-          <dt class="vh">Format</dt><dd>Feed post, 4:5</dd>
         </dl>
       </li>
       <li class="sample">
@@ -90,7 +89,6 @@
         <dl class="recipe">
           <dt>Alona Reef Divers</dt><dd>Dive shop · Panglao</dd>
           <dt class="vh">Goal</dt><dd>Fill try-dive slots</dd>
-          <dt class="vh">Format</dt><dd>Feed post, 4:5</dd>
         </dl>
       </li>
       <li class="sample">
@@ -98,7 +96,6 @@
         <dl class="recipe">
           <dt>Panaderia Dauis</dt><dd>Bakery · Dauis</dd>
           <dt class="vh">Goal</dt><dd>Morning pre-orders</dd>
-          <dt class="vh">Format</dt><dd>Feed post, 4:5</dd>
         </dl>
       </li>
       <li class="sample">
@@ -106,7 +103,6 @@
         <dl class="recipe">
           <dt>Kubo Bay Resort</dt><dd>Beach resort · Anda</dd>
           <dt class="vh">Goal</dt><dd>Weekend bookings</dd>
-          <dt class="vh">Format</dt><dd>Feed post, 4:5</dd>
         </dl>
       </li>
       <li class="sample">
@@ -114,7 +110,6 @@
         <dl class="recipe">
           <dt>Paws &amp; Suds</dt><dd>Pet grooming · Tagbilaran</dd>
           <dt class="vh">Goal</dt><dd>Book December slots</dd>
-          <dt class="vh">Format</dt><dd>Feed post, 4:5</dd>
         </dl>
       </li>
       <li class="sample">
@@ -122,7 +117,6 @@
         <dl class="recipe">
           <dt>Tsokolate Hills Pasalubong</dt><dd>Delicacies shop · Tagbilaran</dd>
           <dt class="vh">Goal</dt><dd>Airport pre-orders</dd>
-          <dt class="vh">Format</dt><dd>Feed post, 4:5</dd>
         </dl>
       </li>
     </ul>
@@ -131,7 +125,7 @@
 
   <section id="prices" class="turn" aria-labelledby="prices-q">
     <h2 id="prices-q" class="msg msg--them msg--q">How much does it cost?</h2>
-    <p class="msg msg--me">Fixed prices, paid monthly. You can try me first for free.</p>
+    <p class="msg msg--me">Fixed prices, no surprises. You can try me first for free.</p>
 
     <div class="pinned" role="group" aria-label="Pinned message: prices">
       <p class="pinned__label"><svg><use href="#i-pin"/></svg>Pinned</p>
@@ -199,14 +193,15 @@
     <h2 id="about-q" class="msg msg--them msg--q">Who are you, by the way?</h2>
     <div class="msg msg--me msg--about">
       <img src="assets/claude-320.webp" width="160" height="160" loading="lazy" alt="Claude Daigan">
-      <p>I'm Claude Daigan. I live in Ubujan, Tagbilaran, and help cafes, resorts, clinics and shops around Bohol show up where customers look: Facebook, Instagram and Google.</p>
+      <p>I'm Claude Daigan. I live in Tagbilaran and help cafes, resorts, clinics and shops around Bohol show up where customers look: Facebook, Instagram and Google.</p>
     </div>
     <p class="msg msg--me">I'm BIR-registered (RDO 084), so you get a proper invoice.</p>
     <p class="msg msg--me">Three things I never do: ask for your password (you add me as an editor), post stock photos of food you don't serve, or promise follower numbers.</p>
   </section>
 
   <section id="message" class="turn turn--compose" aria-labelledby="compose-q">
-    <p class="msg msg--me" id="compose-q">Tell me your business name and what you'd like. I'll reply within a day, Monday to Saturday.</p>
+    <h2 id="compose-q" class="msg msg--them msg--q">OK, how do I start?</h2>
+    <p class="msg msg--me">Tell me your business name and what you'd like. I'll reply within a day, Monday to Saturday.</p>
     <form class="composer" id="composer" action="#message">
       <label class="vh" for="biz">Your business name</label>
       <input id="biz" name="biz" type="text" autocomplete="organization" placeholder="Your business name" required>
