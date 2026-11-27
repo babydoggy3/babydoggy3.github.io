@@ -25,7 +25,7 @@ A local, one-person service in Tagbilaran that makes reels, designed posts and G
 ## Operating Context
 
 - Lead-generation flow (from the owner's Services sheet): Free Online Check-up (1-page review, 2 days) or Free Sample Pack (1 reel + 3 posts from their own photos, 2–3 days) → Starter Setup → monthly plan.
-- The owner also works a night shift; replies within 1 business day, Mon–Sat.
+- The owner also works a night shift; replies within 1 business day, Mon–Fri (Page hours Mon–Fri 9 AM–5 PM).
 - Facebook Page "Claude Daigan – Social Media & Marketing" is being set up but is not live yet.
 
 ## Capabilities and Constraints
